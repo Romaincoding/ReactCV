@@ -1,28 +1,22 @@
 import React from 'react';
 
 const ProgressBar = (props) => {
-                    console.log("props= ",props.languages)
 
-
-
-        const displayTab = props.languages.map((item) =>{
-            let xpYears = 2;
-            let progressBar = item.xp / xpYears * 100 + '%';
-            return (
-                <div key={item.id} className="languagesList">
-                    <li>{item.value}</li>
-                    <div className="progressBar" style={{width: progressBar}}></div>
-                </div>
-            )
-        })
+    const displayTab = props.data.map((item,id) => {
+        let xpYears = 2;
+        let progressBar = item.xp / xpYears * 100 + '%';
+        return (
+            <div key={id} className="languagesList">
+                <li>{item.value}</li>
+                <div className="progressBar" style={{width: progressBar}}></div>
+            </div>
+        )
+    })
 
     return (
         <div className={props.className}>
             <h3>{props.title}</h3>
             <div className="years">
-                <span>Années d'experience</span>
-                <span>1 an</span>
-                <span>2 ans</span>
             </div>
 
             <div>

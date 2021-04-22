@@ -14,8 +14,9 @@ function App() {
                     <Route path="/" exact component={Home}/>
                     <Route path="/competences" component={Knowledges}/>
                     <Route path="/contact" component={Contact}/>
+                    <Route path="/portfolio" component={Portfolio} />
                     <Route component={NotFound}/>
-                    <Route path="/portfolio" component={Portfolio}/>
+
             </Switch>
         </BrowserRouter>
 
