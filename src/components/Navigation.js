@@ -47,7 +47,7 @@ const Navigation = () => {
                            rel="noopener"><i className="fab fa-linkedin"></i></a>
                     </li>
                     <li>
-                        <a href="http://www.google.com" target="_blank"
+                        <a href="https://github.com/Romaincoding" target="_blank"
                            rel="noopener"><i className="fab fa-github"></i></a>
                     </li>
                     <li>
